@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViralClip AI - Turn Long Videos Into Viral Clips</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        <div class="floating-orb orb-3"></div>
+        <div class="floating-orb orb-4"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <span class="logo-text">Viral<span class="logo-highlight">Clip</span></span>
+                <span class="logo-badge">AI</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#app" class="nav-cta">
+                    <i class="fas fa-rocket"></i> Launch App
+                </a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-sparkles"></i>
+                <span>AI-Powered Video Clipping</span>
+                <div class="badge-pulse"></div>
+            </div>
+            <h1 class="hero-title">
+                Turn Long Videos Into
+                <span class="gradient-text">Viral Clips</span>
+                <span class="cursor-blink">|</span>
+            </h1>
+            <p class="hero-description">
+                Our AI analyzes your videos, finds the most engaging moments, 
+                adds vibrant animated subtitles, and scores each clip for viral potential. 
+                Go from hours of footage to scroll-stopping content in minutes.
+            </p>
+            <div class="hero-actions">
+                <a href="#app" class="btn btn-primary btn-lg">
+                    <i class="fas fa-play"></i>
+                    Start Clipping Free
+                    <div class="btn-shine"></div>
+                </a>
+                <a href="#how-it-works" class="btn btn-ghost btn-lg">
+                    <i class="fas fa-circle-play"></i>
+                    Watch Demo
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="2500000">0</div>
+                    <div class="stat-label">Clips Created</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="98">0</div>
+                    <div class="stat-label">% Accuracy</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="150000">0</div>
+                    <div class="stat-label">Happy Creators</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="phone-mockup">
+                <div class="phone-notch"></div>
+                <div class="phone-screen">
+                    <div class="mock-video">
+                        <div class="mock-video-bg"></div>
+                        <div class="mock-subtitle">
+                            <span class="word w1">This</span>
+                            <span class="word w2">is</span>
+                            <span class="word w3 highlight-word">INSANE!</span>
+                        </div>
+                        <div class="mock-virality">
+                            <div class="virality-ring">
+                                <svg viewBox="0 0 36 36">
+                                    <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+                                    <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="url(#gradient)" stroke-width="2" stroke-dasharray="94, 100" class="virality-progress"/>
+                                </svg>
+                                <defs>
+                                    <linearGradient id="gradient">
+                                        <stop offset="0%" stop-color="#ff6b6b"/>
+                                        <stop offset="100%" stop-color="#ffd93d"/>
+                                    </linearGradient>
+                                </defs>
+                                <span class="virality-score-display">94</span>
+                            </div>
+                            <span class="virality-label">Viral Score</span>
+                        </div>
+                        <div class="mock-engagement">
+                            <span><i class="fas fa-heart"></i> 24.5K</span>
+                            <span><i class="fas fa-comment"></i> 1.2K</span>
+                            <span><i class="fas fa-share"></i> 8.3K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="floating-card card-1">
+                <i class="fas fa-fire"></i>
+                <span>Trending</span>
+            </div>
+            <div class="floating-card card-2">
+                <i class="fas fa-closed-captioning"></i>
+                <span>Auto Subtitles</span>
+            </div>
+            <div class="floating-card card-3">
+                <i class="fas fa-chart-line"></i>
+                <span>94% Viral</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-stars"></i> Features</span>
+                <h2 class="section-title">Everything You Need to Go <span class="gradient-text">Viral</span></h2>
+                <p class="section-desc">Powerful AI tools that transform your content creation workflow</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card featured">
+                    <div class="feature-icon">
+                        <i class="fas fa-scissors"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3>Smart AI Clipping</h3>
+                    <p>Our AI watches your entire video, detects high-energy moments, emotional peaks, and key topics to create perfectly-timed clips.</p>
+                    <div class="feature-tag">Most Popular</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon icon-purple">
+                        <i class="fas fa-closed-captioning"></i>
+                    </div>
+                    <h3>Vibrant Subtitles</h3>
+                    <p>Auto-generated animated subtitles with word-by-word highlighting, custom colors, emojis, and eye-catching effects.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon icon-green">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Virality Score</h3>
+                    <p>Each clip gets an AI-powered virality score based on engagement patterns, hook strength, and content analysis.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon icon-orange">
+                        <i class="fas fa-crop-simple"></i>
+                    </div>
+                    <h3>Auto Reframe</h3>
+                    <p>Automatically reframe horizontal videos to vertical (9:16) with smart face tracking and speaker detection.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon icon-pink">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Trending Audio</h3>
+                    <p>Add trending background music and sound effects that match the mood of your clip perfectly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon icon-cyan">
+                        <i class="fas fa-share-nodes"></i>
+                    </div>
+                    <h3>Multi-Platform Export</h3>
+                    <p>Export optimized for TikTok, Instagram Reels, YouTube Shorts, and Twitter/X with one click.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-route"></i> How It Works</span>
+                <h2 class="section-title">From Upload to <span class="gradient-text">Viral</span> in 3 Steps</h2>
+            </div>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-visual">
+                        <div class="step-icon-wrap">
+                            <i class="fas fa-cloud-arrow-up"></i>
+                        </div>
+                        <div class="step-line"></div>
+                    </div>
+                    <h3>Upload Your Video</h3>
+                    <p>Drop any long-form video — podcasts, streams, vlogs, interviews. We support all major formats up to 4K.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-visual">
+                        <div class="step-icon-wrap">
+                            <i class="fas fa-wand-magic-sparkles"></i>
+                        </div>
+                        <div class="step-line"></div>
+                    </div>
+                    <h3>AI Does Its Magic</h3>
+                    <p>Our AI analyzes speech, emotions, engagement patterns, and visual cues to find the best clip-worthy moments.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-visual">
+                        <div class="step-icon-wrap">
+                            <i class="fas fa-download"></i>
+                        </div>
+                    </div>
+                    <h3>Download & Share</h3>
+                    <p>Review clips with virality scores, customize subtitles, and export in perfect format for every platform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main App Section -->
+    <section class="app-section" id="app">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-rocket"></i> Launch App</span>
+                <h2 class="section-title">Create Your <span class="gradient-text">Viral Clips</span> Now</h2>
+            </div>
+
+            <div class="app-container">
+                <!-- Upload Area -->
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-content" id="uploadContent">
+                        <div class="upload-icon">
+                            <i class="fas fa-cloud-arrow-up"></i>
+                            <div class="upload-pulse"></div>
+                        </div>
+                        <h3>Drop your video here</h3>
+                        <p>or click to browse • MP4, MOV, AVI, MKV • Up to 2GB</p>
+                        <input type="file" id="videoInput" accept="video/*" hidden>
+                        <button class="btn btn-primary" id="browseBtn">
+                            <i class="fas fa-folder-open"></i> Browse Files
+                        </button>
+                        <div class="upload-formats">
+                            <span><i class="fab fa-youtube"></i> YouTube URL</span>
+                            <span><i class="fab fa-twitch"></i> Twitch VOD</span>
+                            <span><i class="fas fa-link"></i> Paste Link</span>
+                        </div>
+                    </div>
+
+                    <!-- URL Input -->
+                    <div class="url-input-area" id="urlInputArea" style="display:none;">
+                        <div class="url-input-group">
+                            <i class="fas fa-link"></i>
+                            <input type="url" id="videoUrl" placeholder="Paste YouTube, Twitch, or direct video URL...">
+                            <button class="btn btn-primary btn-sm" id="fetchUrlBtn">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                        <button class="btn btn-ghost btn-sm" id="backToUpload">
+                            <i class="fas fa-arrow-left"></i> Back to upload
+                        </button>
+                    </div>
+
+                    <!-- Upload Progress -->
+                    <div class="upload-progress" id="uploadProgress" style="display:none;">
+                        <div class="progress-icon">
+                            <div class="spinner"></div>
+                        </div>
+                        <h3 id="progressTitle">Uploading video...</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" id="progressBar"></div>
+                        </div>
+                        <p class="progress-text" id="progressText">0% complete</p>
+                        <div class="progress-steps">
+                            <div class="p-step active" id="pStep1">
+                                <i class="fas fa-check-circle"></i> Upload
+                            </div>
+                            <div class="p-step" id="pStep2">
+                                <i class="fas fa-circle"></i> Analyze
+                            </div>
+                            <div class="p-step" id="pStep3">
+                                <i class="fas fa-circle"></i> Transcribe
+                            </div>
+                            <div class="p-step" id="pStep4">
+                                <i class="fas fa-circle"></i> Clip
+                            </div>
+                            <div class="p-step" id="pStep5">
+                                <i class="fas fa-circle"></i> Score
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Settings Panel -->
+                <div class="settings-panel" id="settingsPanel" style="display:none;">
+                    <div class="settings-header">
+                        <h3><i class="fas fa-sliders"></i> Clip Settings</h3>
+                        <button class="btn btn-ghost btn-sm" id="resetSettings">
+                            <i class="fas fa-rotate-left"></i> Reset
+                        </button>
+                    </div>
+
+                    <div class="settings-body">
+                        <!-- Video Preview -->
+                        <div class="video-preview-container">
+                            <video id="videoPreview" controls></video>
+                            <div class="video-info" id="videoInfo">
+                                <span id="videoDuration"><i class="fas fa-clock"></i> --:--</span>
+                                <span id="videoResolution"><i class="fas fa-expand"></i> ---</span>
+                                <span id="videoSize"><i class="fas fa-file"></i> --MB</span>
+                            </div>
+                        </div>
+
+                        <!-- Clip Duration -->
+                        <div class="setting-group">
+                            <label>
+                                <i class="fas fa-stopwatch"></i> Clip Duration
+                                <span class="setting-value" id="clipDurationValue">15-60 seconds</span>
+                            </label>
+                            <div class="range-dual">
+                                <input type="range" id="clipMinDuration" min="5" max="120" value="15">
+                                <input type="range" id="clipMaxDuration" min="5" max="120" value="60">
+                            </div>
+                            <div class="range-labels">
+                                <span>5s</span><span>30s</span><span>60s</span><span>90s</span><span>120s</span>
+                            </div>
+                        </div>
+
+                        <!-- Number of Clips -->
+                        <div class="setting-group">
+                            <label>
+                                <i class="fas fa-layer-group"></i> Number of Clips
+                                <span class="setting-value" id="numClipsValue">5 clips</span>
+                            </label>
+                            <input type="range" id="numClips" min="1" max="20" value="5" class="range-slider">
+                        </div>
+
+                        <!-- Aspect Ratio -->
+                        <div class="setting-group">
+                            <label><i class="fas fa-crop-simple"></i> Aspect Ratio</label>
+                            <div class="ratio-options">
+                                <button class="ratio-btn active" data-ratio="9:16">
+                                    <div class="ratio-preview portrait"></div>
+                                    <span>9:16</span>
+                                    <small>TikTok/Reels</small>
+                                </button>
+                                <button class="ratio-btn" data-ratio="1:1">
+                                    <div class="ratio-preview square"></div>
+                                    <span>1:1</span>
+                                    <small>Instagram</small>
+                                </button>
+                                <button class="ratio-btn" data-ratio="16:9">
+                                    <div class="ratio-preview landscape"></div>
+                                    <span>16:9</span>
+                                    <small>YouTube</small>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Subtitle Style -->
+                        <div class="setting-group">
+                            <label><i class="fas fa-closed-captioning"></i> Subtitle Style</label>
+                            <div class="subtitle-styles">
+                                <button class="subtitle-style-btn active" data-style="hormozi">
+                                    <div class="style-preview hormozi-preview">
+                                        <span class="sp-word">This</span>
+                                        <span class="sp-word sp-highlight">CHANGES</span>
+                                        <span class="sp-word">everything</span>
+                                    </div>
+                                    <span>Hormozi</span>
+                                </button>
+                                <button class="subtitle-style-btn" data-style="karaoke">
+                                    <div class="style-preview karaoke-preview">
+                                        <span class="sp-word sp-active">Word</span>
+                                        <span class="sp-word">by</span>
+                                        <span class="sp-word">word</span>
+                                    </div>
+                                    <span>Karaoke</span>
+                                </button>
+                                <button class="subtitle-style-btn" data-style="bold">
+                                    <div class="style-preview bold-preview">
+                                        <span class="sp-word">BOLD</span>
+                                        <span class="sp-word">TEXT</span>
+                                    </div>
+                                    <span>Bold Pop</span>
+                                </button>
+                                <button class="subtitle-style-btn" data-style="glow">
+                                    <div class="style-preview glow-preview">
+                                        <span class="sp-word">Neon</span>
+                                        <span class="sp-word">Glow</span>
+                                    </div>
+                                    <span>Neon Glow</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Subtitle Colors -->
+                        <div class="setting-group">
+                            <label><i class="fas fa-palette"></i> Subtitle Colors</label>
+                            <div class="color-options">
+                                <button class="color-btn active" data-color="#FFD93D" style="background:#FFD93D"></button>
+                                <button class="color-btn" data-color="#FF6B6B" style="background:#FF6B6B"></button>
+                                <button class="color-btn" data-color="#6BCB77" style="background:#6BCB77"></button>
+                                <button class="color-btn" data-color="#4D96FF" style="background:#4D96FF"></button>
+                                <button class="color-btn" data-color="#FF78C4" style="background:#FF78C4"></button>
+                                <button class="color-btn" data-color="#FFFFFF" style="background:#FFFFFF"></button>
+                                <input type="color" id="customColor" class="custom-color-input" value="#FFD93D">
+                            </div>
+                        </div>
+
+                        <!-- Add Emojis -->
+                        <div class="setting-group">
+                            <label>
+                                <i class="fas fa-face-smile"></i> Auto Emojis
+                                <div class="toggle-switch">
+                                    <input type="checkbox" id="autoEmojis" checked>
+                                    <span class="toggle-slider"></span>
+                                </div>
+                            </label>
+                        </div>
+
+                        <!-- Background Music -->
+                        <div class="setting-group">
+                            <label>
+                                <i class="fas fa-music"></i> Background Music
+                                <div class="toggle-switch">
+                                    <input type="checkbox" id="bgMusic">
+                                    <span class="toggle-slider"></span>
+                                </div>
+                            </label>
+                            <select id="musicStyle" class="select-input" disabled>
+                                <option value="none">Select Style</option>
+                                <option value="energetic">🔥 Energetic</option>
+                                <option value="chill">😌 Chill Lo-Fi</option>
+                                <option value="dramatic">🎭 Dramatic</option>
+                                <option value="funny">😂 Funny/Meme</option>
+                                <option value="motivational">💪 Motivational</option>
+                            </select>
+                        </div>
+
+                        <!-- Generate Button -->
+                        <button class="btn btn-primary btn-lg btn-full" id="generateBtn">
+                            <i class="fas fa-wand-magic-sparkles"></i>
+                            Generate Viral Clips
+                            <div class="btn-shine"></div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Results Panel -->
+                <div class="results-panel" id="resultsPanel" style="display:none;">
+                    <div class="results-header">
+                        <div>
+                            <h3><i class="fas fa-sparkles"></i> Your Viral Clips</h3>
+                            <p id="resultsSubtitle">5 clips generated • Sorted by virality score</p>
+                        </div>
+                        <div class="results-actions">
+                            <button class="btn btn-ghost btn-sm" id="downloadAllBtn">
+                                <i class="fas fa-download"></i> Download All
+                            </button>
+                            <button class="btn btn-ghost btn-sm" id="newVideoBtn">
+                                <i class="fas fa-plus"></i> New Video
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="results-grid" id="resultsGrid">
+                        <!-- Clips will be generated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subtitle Preview Modal -->
+    <div class="modal-overlay" id="clipModal" style="display:none;">
+        <div class="modal-container">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <div class="modal-video-container">
+                    <div class="modal-phone-frame">
+                        <div class="modal-video-area" id="modalVideoArea">
+                            <div class="modal-video-bg"></div>
+                            <div class="modal-subtitles" id="modalSubtitles">
+                                <!-- Animated subtitles will play here -->
+                            </div>
+                            <div class="modal-virality-badge" id="modalViralityBadge">
+                                <span class="modal-score">94</span>
+                                <span class="modal-score-label">Viral Score</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <h3 id="modalClipTitle">Clip Title</h3>
+                    <div class="modal-meta">
+                        <span id="modalDuration"><i class="fas fa-clock"></i> 0:32</span>
+                        <span id="modalHook"><i class="fas fa-magnet"></i> Strong Hook</span>
+                    </div>
+                    <div class="modal-transcript" id="modalTranscript">
+                        <!-- Transcript text -->
+                    </div>
+                    <div class="modal-tags" id="modalTags">
+                        <!-- Tags -->
+                    </div>
+                    <div class="modal-export-options">
+                        <h4><i class="fas fa-share-nodes"></i> Export For</h4>
+                        <div class="export-buttons">
+                            <button class="export-btn" data-platform="tiktok">
+                                <i class="fab fa-tiktok"></i> TikTok
+                            </button>
+                            <button class="export-btn" data-platform="instagram">
+                                <i class="fab fa-instagram"></i> Reels
+                            </button>
+                            <button class="export-btn" data-platform="youtube">
+                                <i class="fab fa-youtube"></i> Shorts
+                            </button>
+                            <button class="export-btn" data-platform="twitter">
+                                <i class="fab fa-x-twitter"></i> X/Twitter
+                            </button>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-lg btn-full" id="modalDownloadBtn">
+                        <i class="fas fa-download"></i> Download Clip
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-tag"></i> Pricing</span>
+                <h2 class="section-title">Simple, <span class="gradient-text">Transparent</span> Pricing</h2>
+                <p class="section-desc">Start free. Upgrade when you're ready to go viral.</p>
+            </div>
+            <div class="pricing-toggle">
+                <span class="toggle-label active">Monthly</span>
+                <div class="toggle-switch-pricing" id="pricingToggle">
+                    <div class="toggle-knob"></div>
+                </div>
+                <span class="toggle-label">
+                    Yearly <span class="save-badge">Save 40%</span>
+                </span>
+            </div>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3>Starter</h3>
+                        <p>Perfect for trying out</p>
+                    </div>
+                    <div class="price-amount">
+                        <span class="currency">$</span>
+                        <span class="amount" data-monthly="0" data-yearly="0">0</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="price-features">
+                        <li><i class="fas fa-check"></i> 3 videos per month</li>
+                        <li><i class="fas fa-check"></i> 5 clips per video</li>
+                        <li><i class="fas fa-check"></i> Basic subtitles</li>
+                        <li><i class="fas fa-check"></i> Virality scoring</li>
+                        <li class="disabled"><i class="fas fa-times"></i> No watermark</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Custom branding</li>
+                    </ul>
+                    <button class="btn btn-ghost btn-full">Get Started Free</button>
+                </div>
+                <div class="price-card popular">
+                    <div class="popular-badge">Most Popular 🔥</div>
+                    <div class="price-header">
+                        <h3>Creator</h3>
+                        <p>For serious content creators</p>
+                    </div>
+                    <div class="price-amount">
+                        <span class="currency">$</span>
+                        <span class="amount" data-monthly="29" data-yearly="17">29</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="price-features">
+                        <li><i class="fas fa-check"></i> 30 videos per month</li>
+                        <li><i class="fas fa-check"></i> 20 clips per video</li>
+                        <li><i class="fas fa-check"></i> All subtitle styles</li>
+                        <li><i class="fas fa-check"></i> Virality scoring</li>
+                        <li><i class="fas fa-check"></i> No watermark</li>
+                        <li><i class="fas fa-check"></i> Background music</li>
+                    </ul>
+                    <button class="btn btn-primary btn-full">
+                        Start Free Trial
+                        <div class="btn-shine"></div>
+                    </button>
+                </div>
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3>Agency</h3>
+                        <p>For teams and agencies</p>
+                    </div>
+                    <div class="price-amount">
+                        <span class="currency">$</span>
+                        <span class="amount" data-monthly="99" data-yearly="59">99</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="price-features">
+                        <li><i class="fas fa-check"></i> Unlimited videos</li>
+                        <li><i class="fas fa-check"></i> Unlimited clips</li>
+                        <li><i class="fas fa-check"></i> All features</li>
+                        <li><i class="fas fa-check"></i> Custom branding</li>
+                        <li><i class="fas fa-check"></i> API access</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                    </ul>
+                    <button class="btn btn-ghost btn-full">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon"><i class="fas fa-bolt"></i></div>
+                        <span class="logo-text">Viral<span class="logo-highlight">Clip</span></span>
+                    </a>
+                    <p>Turn your long-form content into scroll-stopping viral clips with AI-powered editing.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="#">Features</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">API</a>
+                    <a href="#">Changelog</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <a href="#">Blog</a>
+                    <a href="#">Tutorials</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">Community</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ViralClip AI. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart" style="color:#ff6b6b"></i> for content creators</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- FFmpeg Video Engine (for real video clipping) -->
+    <script src="https://unpkg.com/@ffmpeg/ffmpeg@0.12.10/dist/umd/ffmpeg.min.js"></script>
+    <script src="https://unpkg.com/@ffmpeg/util@0.12.1/dist/umd/util.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
